@@ -1,7 +1,7 @@
 package org.launchcode.techjobs.persistent;
 
+import jakarta.persistence.ManyToMany;
 import mockit.Expectations;
-import mockit.Mock;
 import mockit.Mocked;
 import org.junit.jupiter.api.Test;
 import org.launchcode.techjobs.persistent.controllers.HomeController;
@@ -17,7 +17,6 @@ import org.springframework.ui.ExtendedModelMap;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 
-import javax.persistence.ManyToMany;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.*;

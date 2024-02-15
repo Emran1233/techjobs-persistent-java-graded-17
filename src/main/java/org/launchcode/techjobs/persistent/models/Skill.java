@@ -1,10 +1,10 @@
 package org.launchcode.techjobs.persistent.models;
 
 
-import javax.persistence.ManyToMany;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 import java.util.ArrayList;
 import java.util.List;

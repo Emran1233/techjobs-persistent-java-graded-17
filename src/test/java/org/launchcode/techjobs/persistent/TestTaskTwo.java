@@ -1,5 +1,12 @@
 package org.launchcode.techjobs.persistent;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import mockit.Expectations;
 import mockit.Mocked;
 import org.junit.jupiter.api.Test;
@@ -18,13 +25,6 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
@@ -555,4 +555,4 @@ public class TestTaskTwo extends AbstractTest {
         boolean queryFound = queryMatcher.find();
         assertTrue(queryFound, "Task 2 SQL query is incorrect. Test your query against your database to find the error.");
     }
-}}}
+}
