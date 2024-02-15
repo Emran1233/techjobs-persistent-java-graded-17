@@ -9,3 +9,4 @@ import org.springframework.stereotype.Repository;
 public interface EmployerRepository extends CrudRepository<Employer, Integer> {
 
 }
+
